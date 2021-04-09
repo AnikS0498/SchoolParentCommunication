@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 @Entity
 public class Attendance {
@@ -15,6 +16,7 @@ public class Attendance {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	
+	@OneToOne
 	private Student student;
 	
 	@Column
@@ -64,6 +66,13 @@ public class Attendance {
 	public void setPresent(boolean present) {
 		this.present = present;
 	}
+
+	@Override
+	public String toString() {
+		return "Attendance [id=" + id + ", student=" + student + ", dateOfClass=" + dateOfClass + ", present=" + present
+				+ "]";
+	}
+	
 	
 	
 	

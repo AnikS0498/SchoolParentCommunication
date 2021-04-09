@@ -1,5 +1,5 @@
 package com.cg.spc.entities;
 
-public class ConcernParty {
-
+public enum ConcernParty {
+	TEACHER,ACCOUNTANT,PRINCIPAL,TRANSPORTOFFICER,CATERER;
 }

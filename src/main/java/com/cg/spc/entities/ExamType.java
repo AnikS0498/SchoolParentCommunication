@@ -1,5 +1,7 @@
 package com.cg.spc.entities;
 
-public class ExamType {
+public enum ExamType {
 
+		MCQ,DESCRIPTIVE,ANALYTICAL;
+		
 }

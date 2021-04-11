@@ -1,5 +1,7 @@
 package com.cg.spc.entities;
 
+//Anikesh push git
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 
